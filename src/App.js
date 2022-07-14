@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div>
-      <NewExpense onAddExpense ={addExpenseHandler}></NewExpense>
-      <Expenses dataStore = {expenses} />
+      <NewExpense onAddExpense ={addExpenseHandler}></NewExpense> {/**get new expense data from the form */}
+      <Expenses dataStore = {expenses} /> {/**pass the expense data and display */}
     </div>
   );
 }
