@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 
-import './App.css';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
+
+import './App.css';
 
 const dummy_expenses = [
   { id: 'e1', title: 'Toilet Paper', amount: 94.12, date: new Date(2020, 7, 14),},
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div>
-      <NewExpense onAddExpense ={addExpenseHandler}></NewExpense> {/**get new expense data from the form */}
+      <NewExpense onAddExpense ={addExpenseHandler} /> {/**get new expense data from the form */}
       <Expenses items = {expenses} /> {/**pass the expense data and display */}
     </div>
   );

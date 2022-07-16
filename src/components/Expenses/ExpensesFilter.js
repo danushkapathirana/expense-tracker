@@ -20,7 +20,6 @@ function ExpensesFilter(props) {
             </div>
         </div>
     )
-
 }
 
 export default ExpensesFilter
